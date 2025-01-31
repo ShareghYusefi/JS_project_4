@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <h1>Add a Task</h1>
+    <form>
+      <label for="title">Title</label><br />
+      <input type="text" id="title" name="title" required /> <br /><br />
+
+      <label for="description">Description</label> <br />
+      <textarea
+        name="description"
+        id="description"
+        rows="4"
+        cols="33"
+      ></textarea>
+      <br />
+
+      <label for="category">Category</label><br />
+      <input type="text" id="category" name="category" required /> <br /><br />
+
+      <label for="priority_level">Priority Level</label> <br />
+      <select name="priority_level" id="priority_level">
+        <option value="">Select an item</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <br /><br />
+
+      <label for="progress_level">Progress Level</label> <br />
+      <select name="progress_level" id="progress_level">
+        <option value="">Select an item</option>
+        <option value="pending">Pending</option>
+        <option value="completed">Completed</option>
+      </select>
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
